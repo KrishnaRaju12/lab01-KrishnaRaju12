@@ -1,0 +1,14 @@
+{
+  "tests": [
+    {
+      "name": "Unit Tests",
+      "setup": "",
+      "run": "python -m unittest Lab01-tests",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": null
+    }
+  ]
+}
