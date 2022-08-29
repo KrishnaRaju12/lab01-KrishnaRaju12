@@ -11,7 +11,7 @@ square feet in a tract of land and calculates the number of acres in the tract. 
 only output the number of whole acres. You may assume the input is a non-negative number. See Chapter 2 Programming
 Exercise 3.
 
-Author(s): (add author names here)
+Author(s): (Krishna Raju araju@eiu.edu)
 """
 
 # A constant for the number of square feet in an acre
