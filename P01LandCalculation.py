@@ -20,8 +20,8 @@ SQUARE_FEET_PER_ACRE = 43560
 
 def land_calculation(square_feet):
     """This doc string is at the start of a function, so it documents the function.
-    Computes the number of whole acres in a given number of square feet. Assumes square_feet is a non-negative number."""
-    return 0 # Add your code here
+    Computes the number of whole acres in a given number of square feet.Assumes square_feet is a non-negative number."""
+    return square_feet // SQUARE_FEET_PER_ACRE
 
 
 # Do not edit code below this point. Note there are ways to do this in less code. However, the focus is on readability

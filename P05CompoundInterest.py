@@ -14,13 +14,28 @@ Then the program should calculate and display the amount of money that will be i
 number of years. See Chapter 2 Programming Exercise 14 for more details and the formula for this type of compound
 interest.
 
-Author(s): (add author names here)
+Author(s): (Krishna Raju)
 """
 
 
 def future_value(principle, rate, times_compounded_per_year, years):
-    return 0
+    return principle * (1 + (rate / 100) / times_compounded_per_year) ** (times_compounded_per_year * years)
 
 
 if __name__ == "__main__":
-    pass
+
+    # Principle ammount
+
+    principle_amount = float(input('Enter the amount of principle originally deposited '))
+    # Interest rate
+    interest_rate = float(input('Enter the annual rate '))
+
+    interest_rate = (interest_rate) / 100
+
+    # Number of years that the interest is compounded
+    compound_rate = float(input('Enter the number of years the interest is compounded '))
+
+    # Number of years the account will earn interest
+    interest_years = float(input('Enter the number of years the account will earn interest '))
+
+    print('The value of the account will be ', format(future_value(principle_amount, interest_rate, compound_rate, interest_years), '.2f'))

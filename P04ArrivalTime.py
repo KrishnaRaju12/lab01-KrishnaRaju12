@@ -5,7 +5,7 @@ Assuming there are no delays the distance that a car travels is given by:
     Distance = Speed * Time
 
 You are to write a program that asks a user for the
-Author(s): (add author names here)
+Author(s): (Krishna Raju)
 """
 
 # Add any needed constants here
@@ -21,7 +21,17 @@ def print_arrival_time(distance, speed):
     # Note this function will have no return. It just prints the result. Remove the following print statement and add
     # your own code to print the correct values for the given distance and speed. Consider using the remainder (modulus)
     # operator.
-    print("Arrival in 0 hour(s) and 0 minute(s)")
+
+    # Number of hours
+    time = distance // speed
+
+    # Remaining minutes
+    remainder = distance % speed
+
+    # Number of minutes
+    minutes = float(remainder / speed) * 60
+
+    print("Arrival in", int(time), "hour(s) and", int(minutes), "minute(s)")
 
 
 # Do not edit anything below this point
